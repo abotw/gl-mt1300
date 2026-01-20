@@ -49,8 +49,6 @@ To manage the mount points and storage via the browser, include these:
     -   `luci-app-mountd`
     -   `luci-app-fstab` (Highly recommended for visual configuration of Extroot)
 
-------
-
 ## 5. Summary Checklist for `make menuconfig`
 
 | **Category** | **Item to Select**  | **Purpose**                        |
@@ -61,8 +59,6 @@ To manage the mount points and storage via the browser, include these:
 | **Utils**    | `e2fsprogs`         | Used to format the SD card to ext4 |
 | **LuCI**     | `luci-app-fstab`    | UI for managing the expansion      |
 
-------
-
 ## Post-Compilation Workflow
 
 Once you flash this firmware, the general steps to perform the expansion are:
@@ -72,5 +68,3 @@ Once you flash this firmware, the general steps to perform the expansion are:
 3.  **Transfer**: Copy the current `/overlay` data to the SD card.
 4.  **Configure**: Edit `/etc/config/fstab` to mount the SD card partition as `/overlay`.
 5.  **Reboot**: After rebooting, your "Free Space" in the software tab should reflect the size of your SD card.
-
-Would you like me to provide the specific shell commands for the **Extroot** migration process once your firmware is ready?
